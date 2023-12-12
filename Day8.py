@@ -771,7 +771,7 @@ print(path_check('IGZ' ,'Z'))
 count = 0
 all_paths = key_present('A')
 
-all_paths = ['VKA']
+all_paths = ['KKZ']
 while found == False:
     for dir in directions:
         print(all_paths)
@@ -783,7 +783,7 @@ while found == False:
                 all_paths[index] = path[start][0]
             elif dir =='R':
                 all_paths[index] = path[start][1]
-            if path_check(all_paths[index], 'Z'):
+            if path_check(all_paths[index], 'A'):
                 found_all.append(True)
             else:
                 found_all.append(False)
